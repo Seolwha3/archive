@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="생각과 일상을 기록하는 개인 블로그입니다.">
+  <title>기록 — 개인 블로그</title>
+  <style>
+    :root { color-scheme: light; --ink: #171717; --muted: #777; --line: #e8e8e8; --paper: #fff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(100% - 48px, 940px); margin: 0 auto; }
+    header { height: 76px; border-bottom: 1px solid var(--line); display: flex; align-items: center; }
+    .nav { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+    .brand { font-size: 17px; font-weight: 650; letter-spacing: -.04em; }
+    .links { display: flex; gap: 28px; color: #555; font-size: 13px; }
+    main { padding: 94px 0 110px; }
+    .intro { margin-bottom: 76px; }
+    .eyebrow { margin: 0 0 18px; color: var(--muted); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(36px, 6vw, 58px); letter-spacing: -.065em; line-height: 1.15; font-weight: 600; }
+    .subtitle { margin: 20px 0 0; color: #656565; font-size: 16px; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid var(--ink); }
+    h2 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -.03em; }
+    .count { color: var(--muted); font-size: 12px; }
+    .post { display: grid; grid-template-columns: 120px 1fr; gap: 26px; padding: 25px 0 27px; border-bottom: 1px solid var(--line); }
+    time { color: var(--muted); font-size: 12px; padding-top: 4px; }
+    .post h3 { margin: 0; font-size: 17px; font-weight: 550; letter-spacing: -.025em; }
+    .post p { margin: 8px 0 0; color: #777; font-size: 13px; }
+    .empty { padding: 44px 0; color: #777; font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 34px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 600px) { .wrap { width: min(100% - 36px, 940px); } header { height: 64px; } .links { gap: 18px; } main { padding: 68px 0 80px; } .intro { margin-bottom: 56px; } .post { grid-template-columns: 1fr; gap: 4px; padding: 20px 0; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap nav"><a class="brand" href="/">기록</a><nav class="links" aria-label="주요 메뉴"><a href="#posts">글</a><a href="#about">소개</a></nav></div></header>
+  <main class="wrap">
+    <section class="intro" id="about"><p class="eyebrow">PERSONAL JOURNAL</p><h1>천천히 모으는<br>생각과 일상</h1><p class="subtitle">읽고, 만들고, 살아가는 동안의 기록을 남깁니다.</p></section>
+    <section id="posts" aria-labelledby="posts-title"><div class="section-head"><h2 id="posts-title">최근 글</h2><span class="count">아직 글이 없습니다</span></div><div class="empty">첫 번째 기록을 준비하고 있습니다.</div></section>
+  </main>
+  <footer><div class="wrap">© 2026 기록. All rights reserved.</div></footer>
+</body>
+</html>
